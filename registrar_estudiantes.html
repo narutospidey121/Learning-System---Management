@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LS&M |Registrar estudiantes </title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min_administrador.css" rel="stylesheet">
+    <link href="css/estilos_administrador.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min_administrador.css">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="dropdown crear">
+
+                        <div class="col-md-12">
+                            <h1 style="color:#9c9549"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="color:#9b863f"></span> Administrar<small style="color:#a5aaaa"> Registros</small></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="zmdi zmdi-settings" href="index_panel.html"> Panel de control</a></li>
+                        <li class="active"><a href="registrar_admin.html" class=" zmdi zmdi-accounts-add"> Gestionar usuarios
+                                <i class=""></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Item #1</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Item #3</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="zmdi zmdi-accounts-list" href="lista_admin.html "> Listas de usuarios</a></li>
+                        <li><a class="zmdi zmdi-assignment-o" href="cursos_administrador.html"> Cursos </a></li>
+                        <li><a class="zmdi zmdi-assignment-o" href="biblioteca_admin.html"> biblioteca virtual </a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown"><a href="#" class="dropdown-toggle zmdi zmdi-wrench" data-toggle="dropdown" role="button"> Configuración
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
+                                    <figure>
+                                        <img src="images/user03.png" alt="Biblioteca" class="img-responsive center-box" style="width:35%;">
+                                    </figure>
+                                    <p class="text-center" style="padding-top: 15px;">Adminstrador</p>
+                                </div>
+                                <li class="divider"></li>
+                                <li><a class="zmdi zmdi-help" href="#"> Ayuda</a></li>
+                                <li><a class="zmdi zmdi-edit" href="#"> editar información</a></li>
+                                <li><a class="zmdi zmdi-power" href="#login.html"> Salir</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <!--
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html">Panel de Control</a></li>
+                <li class="active">Entradas</li>
+            </ol>
+        </div>
+    </section>
+-->
+
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="soporte.html" class="list-group-item active color-principal">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Soporte
+                        </a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-help-outline" aria-hidden="true"></span> Preguntas<span class="badge">39</span></a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-alert-circle-o" aria-hidden="true"></span> Quejas<span class="badge">45</span></a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-comment-outline" aria-hidden="true"></span> Reclamos<span class="badge">112</span></a> <a href="#" class="list-group-item"><span class="zmdi zmdi-comments" aria-hidden="true"></span> Sugerencias<span class="badge">112</span></a>
+                    </div>
+
+                    <!--
+            <div class="well">
+              <h4>Espacio en Disco</h4>
+              <div class="progress">
+                  <div class="barra-progreso" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                      40%
+              </div>
+            </div>
+            <h4>Ancho de Banda </h4>
+            <div class="progress">
+                <div class="barra-progreso" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                    75%
+            </div>
+          </div>
+            </div>
+-->
+                </div>
+                <div class="col-md-9">
+                    <!-- Website Overview -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg ">
+                            <h3 class="panel-title zmdi zmdi-account-add"> Registrar Estudiantes</h3>
+                        </div>
+                        <div class="panel-body">
+                            <br>
+                            <!-- lista de usuarios -->
+
+                            <div class="container-fluid">
+                                <ul class="nav nav-tabs nav-justified" style="font-size: 17px;">
+                                    <li role="presentation"><a href="registrar_admin.html">Administradores</a></li>
+                                    <li role="presentation"><a href="registrar_docentes.html">Docentes</a></li>
+                                    <li role="presentation" class="active"><a href="registrar_estudiantes.html">Estudiantes</a></li>
+                                    <li role="presentation"><a href="registrar_secretarios.html">Secretarios</a></li>
+                                </ul>
+                            </div>
+                            <div class="container-fluid" style="margin: 50px 0;">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-3">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                                        Bienvenido a la sección para registrar nuevos estudiantes del sistema, debes de llenar todos los campos del siguiente formulario para registrar un estudiante
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12 lead">
+                                        <!--
+                                        <ol class="breadcrumb">
+                                            <li class="active">Nuevo administrador</li>
+                                            <li><a href="listadmin.html">Listado de administradores</a></li>
+                                        </ol>
+-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="container-flat-form">
+                                    <div class="title-flat-form title-flat-blue ">Registrar un nuevo estudiante</div>
+                                    <form autocomplete="off">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                                                <div class="group-material">
+                                                    <input type="text" class="material-control tooltips-general" placeholder="Nombre completo" required="" maxlength="70" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,70}" data-toggle="tooltip" data-placement="top" title="Escribe el nombre del administrador">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label>Nombre completo</label>
+                                                </div>
+                                                <div class="group-material">
+                                                    <input type="text" class="material-control tooltips-general input-check-user" placeholder="Nombre de usuario" required="" maxlength="20" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{1,20}" data-toggle="tooltip" data-placement="top" title="Escribe un nombre de usuario sin espacios, que servira para iniciar sesión">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label>Nombre de usuario</label>
+                                                </div>
+                                                <div class="group-material">
+                                                    <input type="email" class="material-control tooltips-general" placeholder="E-mail" maxlength="50" data-toggle="tooltip" data-placement="top" title="Escribe el Email del administrador">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label>Email</label>
+                                                </div>
+                                                <div class="group-material">
+                                                    <input type="password" class="material-control tooltips-general" placeholder="Contraseña" required="" maxlength="200" data-toggle="tooltip" data-placement="top" title="Escribe una contraseña">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label>Contraseña</label>
+                                                </div>
+                                                <div class="group-material">
+                                                    <input type="password" class="material-control tooltips-general" placeholder="Repite la contraseña" required="" maxlength="200" data-toggle="tooltip" data-placement="top" title="Repite la contraseña">
+                                                    <span class="highlight"></span>
+                                                    <span class="bar"></span>
+                                                    <label>Repetir contraseña</label>
+                                                </div>
+                                                <p class="text-center">
+                                                    <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
+                                                    <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Guardar</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright LS&M, &copy; 2019</p>
+    </footer>
+
+    <!-- Modals -->
+
+    <!-- Agregar página -->
+    <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Agregar Página</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Título de Página</label>
+                            <input type="text" class="form-control" placeholder="Título de la página">
+                        </div>
+                        <div class="form-group">
+                            <label>Mensaje de Página</label>
+                            <textarea name="editor1" class="form-control" placeholder="Información de la página"></textarea>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Publicado
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>Palabras Clave</label>
+                            <input type="text" class="form-control" placeholder="Agregar algunas palabras...">
+                        </div>
+                        <div class="form-group">
+                            <label>Meta Descripción</label>
+                            <input type="text" class="form-control" placeholder="Agregar una metadescripción...">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        CKEDITOR.replace('editor1');
+
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

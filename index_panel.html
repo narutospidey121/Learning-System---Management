@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LS&M | Panel de control</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min_administrador.css" rel="stylesheet">
+    <link href="css/estilos_administrador.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min_administrador.css">
+    <script src="http://cdn.ckeditor.com/4.6.1/sta  ndard/ckeditor.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="dropdown crear">
+
+                        <div class="col-md-12">
+                            <h1 style="color:#9c9549"><span class="glyphicon glyphicon-cog" aria-hidden="true" style="color:#9b863f"></span> Administrar<small style="color:#a5aaaa"> Registros</small></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active "><a class="zmdi zmdi-settings" href="index_panel.html"> Panel de control</a></li>
+                        <li><a href="registrar_admin.html" class=" zmdi zmdi-accounts-add"> Gestionar usuarios</a>
+                        </li>
+                        <li><a class="zmdi zmdi-accounts-list" href="lista_admin.html "> Listas de usuarios</a></li>
+                        <li><a class="zmdi zmdi-assignment-o" href="cursos_administrador.html"> Cursos </a></li>
+                        <li><a class="zmdi zmdi-assignment-o" href="biblioteca_admin.html"> biblioteca virtual </a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown"><a href="#" class="dropdown-toggle zmdi zmdi-wrench" data-toggle="dropdown" role="button"> Configuración
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
+                                    <figure>
+                                        <img src="images/user03.png" alt="Biblioteca" class="img-responsive center-box" style="width:35%;">
+                                    </figure>
+                                    <p class="text-center" style="padding-top: 15px;">Adminstrador</p>
+                                </div>
+                                <li class="divider"></li>
+                                <li><a class="zmdi zmdi-help" href="#"> Ayuda</a></li>
+                                <li><a class="zmdi zmdi-edit" href="#"> editar información</a></li>
+                                <li><a class="zmdi zmdi-power" href="#login.html"> Salir</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+
+    <!--    menu-->
+    <!--fin menu-->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="soporte.html" class="list-group-item active color-principal">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Soporte
+                        </a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-help-outline" aria-hidden="true"></span> Preguntas<span class="badge">39</span></a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-alert-circle-o" aria-hidden="true"></span> Quejas<span class="badge">45</span></a>
+                        <a href="#" class="list-group-item"><span class="zmdi zmdi-comment-outline" aria-hidden="true"></span> Reclamos<span class="badge">112</span></a> <a href="#" class="list-group-item"><span class="zmdi zmdi-comments" aria-hidden="true"></span> Sugerencias<span class="badge">112</span></a>
+                    </div>
+
+                    <!--
+            <div class="well">
+              <h4>Espacio en disco</h4>
+              <div class="progress">
+                  <div class="barra-progreso" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                      40%
+              </div>
+            </div>
+            <h4>Ancho de banda </h4>
+            <div class="progress">
+                <div class="barra-progreso" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                    75%
+            </div>
+          </div>
+            </div>
+-->
+                </div>
+                <div class="col-md-9">
+                    <!-- Vista rápida del sitio -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                            <h3 class="panel-title">Vista control de sistema</h3>
+                        </div>
+                        <section class="full-reset text-center" style="padding: 40px 0;">
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
+                                <div class="tile-name all-tittles">administradores</div>
+                                <div class="tile-num full-reset">7</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
+                                <div class="tile-name all-tittles">estudiantes</div>
+                                <div class="tile-num full-reset">70</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
+                                <div class="tile-name all-tittles">docentes</div>
+                                <div class="tile-num full-reset">11</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-female"></i></div>
+                                <div class="tile-name all-tittles" style="width: 90%;">secretario/a</div>
+                                <div class="tile-num full-reset">17</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-book"></i></div>
+                                <div class="tile-name all-tittles">libros</div>
+                                <div class="tile-num full-reset">77</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-assignment"></i></div>
+                                <div class="tile-name all-tittles">cursos</div>
+                                <div class="tile-num full-reset">17</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-timer"></i></div>
+                                <div class="tile-name all-tittles">soporte</div>
+                                <div class="tile-num full-reset">10</div>
+                            </article>
+                            <article class="tile">
+                                <div class="tile-icon full-reset"><i class="zmdi zmdi-trending-up"></i></div>
+                                <div class="tile-name all-tittles" style="width: 90%;">reportes y estadísticas</div>
+                                <div class="tile-num full-reset">&nbsp;</div>
+                            </article>
+                        </section>
+                    </div>
+
+                    <!-- últimos usuarios -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Últimos registros</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped table-hover">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Registrado</th>
+
+                                <tr>
+                                    <td>Juan Lopez</td>
+                                    <td>juancho4582@gmail.com</td>
+                                    <td>Dic 17, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>Martha Solis</td>
+                                    <td>mart789ha@yahoo.es</td>
+                                    <td>Dic 17, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>jdoe@gmail.com</td>
+                                    <td>Dic 17, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>Mauricio Osorio</td>
+                                    <td>mauosoro@yahoo.com</td>
+                                    <td>Dic 17, 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>Mike Mayer</td>
+                                    <td>mjohn88@gmail.com</td>
+                                    <td>Dic 17, 2018</td>
+                                </tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright LS&M &copy; 2019</p>
+    </footer>
+
+    <script>
+        CKEDITOR.replace('editor1');
+
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
